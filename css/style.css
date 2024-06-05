@@ -10,6 +10,7 @@
     --primary-color: #4891ff;
     --light-color: #f4f4f6;
     --dark-color: #111;
+    --darkgrey-color: #2f5382;
 }
 
 body
@@ -79,7 +80,7 @@ img
     background: url('../images/hero.png') no-repeat;
     background-size: contain;
     background-position: center bottom;
-    height: 650px;
+    height: 550px;
 }
 .hero .hero-content
 {
@@ -103,9 +104,48 @@ img
     flex-direction: column;
     align-items: center;
 }
+.presentation-content img
+{
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid rgb(255, 255, 255);
+}
+.presentation-text
+{
+    display: block;
+    margin: 0 auto;
+}
+.presentation-bold
+{
+    font-weight: 500;
+    font-style: italic;
+}
 .presentation-preview
 {
     margin-bottom: 40px;
+}
+
+/* Testimonials */
+.testimonials
+{
+    padding: 40px 0;
+}
+.testimonials .testimonials-heading
+{
+    width: 700px; 
+    margin-bottom: 40px;
+}
+.testimonials-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.testimonials .card p:nth-child(2)
+{
+    margin-top:30px;
+    font-weight: bold;
 }
 
 /* UTILITY CLASSES */
@@ -230,13 +270,22 @@ img
 }
 .bg-dark
 {
+    background: var(--darkgrey-color);
+    color: #fff;
+}
+.bg-black
+{
     background: var(--dark-color);
     color: #fff;
 }
-.bg-grey
+
+/* Cards */
+.card
 {
-    background: #353e46;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /* SOON-PAGE */
@@ -250,7 +299,7 @@ img
     font-weight: 600;
     margin: 40px 0 20px;
 
-    background: #353e46;
+    background: var(--darkgrey-color);
     color: #fff;
 }
 .soonbtn
