@@ -235,7 +235,7 @@ img
 }
 .bg-grey
 {
-    background: #708090;
+    background: #353e46;
     color: #fff;
 }
 
@@ -244,14 +244,19 @@ img
 {
     background-image: url(../images/bg.jpg);
     text-align: center;
+
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
     margin: 40px 0 20px;
+
+    background: #353e46;
+    color: #fff;
 }
 .soonbtn
 {
     border: 50px;
+
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 600;
