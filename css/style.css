@@ -80,12 +80,12 @@ img
     background: url('../images/hero.png') no-repeat;
     background-size: contain;
     background-position: center bottom;
-    height: 550px;
+    height: 580px;
 }
 .hero .hero-content
 {
     width: 70%;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 .hero .hero-text
 {
@@ -146,6 +146,40 @@ img
 {
     margin-top:30px;
     font-weight: bold;
+}
+
+/* Footer */
+.footer
+{
+    padding: 40px 0;
+}
+.footer h4
+{
+    margin-bottom: 10px;
+}
+.footer ul li
+{
+    line-height: 2.5;
+}
+.footer a
+{
+    color: #ccc;
+}
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .card
+{
+    margin: 20px 30px 30px 0;
+}
+.footer-meh
+{
+    margin-top: 30px;
 }
 
 /* UTILITY CLASSES */
@@ -271,6 +305,11 @@ img
 .bg-dark
 {
     background: var(--darkgrey-color);
+    color: #fff;
+}
+.bg-grey
+{
+    background: #333;
     color: #fff;
 }
 .bg-black
