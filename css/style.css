@@ -49,6 +49,11 @@ img
     justify-content: space-between;
     align-items: center;
 }
+.navbar .container .logo
+{
+    width: 304px;
+    height: 32px;
+}
 .navbar .main-menu ul
 {
     display: flex;
@@ -80,12 +85,13 @@ img
     background: url('../images/hero.png') no-repeat;
     background-size: contain;
     background-position: center bottom;
-    height: 580px;
+    height: 620px;
 }
 .hero .hero-content
 {
     width: 70%;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .hero .hero-text
 {
@@ -168,7 +174,7 @@ img
 .footer-grid
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -262,7 +268,7 @@ img
     margin: 40px 0 20px;
 }
 
-.text-xl
+.text-lg
 {
     font-size: 1.8rem;
     line-height: 1.4;
