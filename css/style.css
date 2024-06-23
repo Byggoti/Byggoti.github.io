@@ -449,9 +449,9 @@ img
     .hero .container
     {
         background: url('../images/heromb.png') no-repeat;
-        background-size: 350px 400px;
+        background-size: 420px 480px;
         background-position: bottom;
-        height: 670px;
+        height: 780px;
     }
 
     .hero .hero-content
@@ -511,5 +511,17 @@ img
     .text-xxl 
     {
         font-size: 2rem;
+    }
+}
+@media (max-width: 850px) 
+{
+    .navbar .main-menu
+    {
+        display: none;
+    }
+
+    .navbar .hamburger-button
+    {
+        display: block;
     }
 }
