@@ -534,3 +534,96 @@ img
         display: block;
     }
 }
+
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+  }
+  
+  /* ascuns implicit */
+  .dropdown > .dropdown-content {
+    display: none !important;   /* suprascrie regula globală */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;     /* vertical */
+    background: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 9999;
+    padding: 5px 0;
+  }
+  
+  /* fiecare element din submeniu pe verticală */
+  .dropdown .dropdown-content li {
+    display: block;
+    width: 100%;
+  }
+  
+  .dropdown .dropdown-content li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .dropdown .dropdown-content li a:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+  }
+  
+  /* apare doar la hover */
+  .dropdown:hover > .dropdown-content {
+    display: flex !important;
+  }
+
+ /* Mobile dropdown */
+.mobile-dropdown-content {
+    display: none;
+    flex-direction: column;
+    padding-left: 0; /* eliminăm padding-ul implicit */
+    margin: 0;        /* eliminăm margin-ul implicit */
+}
+
+.mobile-dropdown-content li {
+    margin: 0;        /* fiecare item fără spațiu suplimentar */
+}
+
+.mobile-dropdown-content li a {
+    padding: 10px 15px; /* spațiu uniform, mai mic decât cel din .main-menu */
+    display: block;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.mobile-dropdown-content li a:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+.mobile-dropdown.open > .mobile-dropdown-content {
+    display: flex;
+}
+
+.mobile-menu ul {
+    margin-top: 0; /* sau 10px maxim */
+    padding-right: 10px;
+}
+
+.padding-top-75 {
+    padding-top: 75px;
+}
+
+/* Iconița săgeată */
+.mobile-dropdown > a i {
+    transition: transform 0.3s ease;
+    display: inline-block; /* important pentru transform */
+}
+
+/* când submeniul e deschis */
+.mobile-dropdown.open > a i {
+    transform: rotate(180deg);
+}
