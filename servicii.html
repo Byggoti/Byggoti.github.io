@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicii Medicale & Boli Tratate | Medical Expert House</title>
+  <meta name="description" content="Servicii complete de diagnostic, monitorizare și tratament pentru boli cronice la Spitalul Medical Expert House din Păușești-Măglași, Vâlcea.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#135e6e',
+              tealDark: '#0c323a',
+              tealLight: '#edf7f9',
+              orange: '#ea580c',
+              orangeDark: '#c2410c',
+              orangeLight: '#fff4ed',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+      <!-- ==================== 1. TOP BAR ==================== -->
+  <div class="top-bar">
+    <div class="container-custom flex flex-wrap justify-between items-center gap-2">
+      <!-- Stânga: Urgențe & Asistență medicală -->
+      <div class="flex items-center gap-5 sm:gap-6 text-xs sm:text-sm">
+        <a href="tel:+40774503392" class="flex items-center gap-2 hover:text-amber-300 font-medium transition">
+          <svg class="w-4 h-4 text-brand-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>Urgențe / Internări: <strong class="text-white font-bold">0774 503 392</strong></span>
+        </a>
+        <span class="hidden md:flex items-center gap-2 text-slate-200">
+          <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Asistență medicală: <strong class="text-white font-bold">Permanent (24/7)</strong>
+        </span>
+      </div>
+
+      <!-- Dreapta: Locație (Fără mail în header) -->
+      <div class="hidden sm:flex items-center text-xs sm:text-sm text-slate-200">
+        <span class="flex items-center gap-1.5 text-slate-200">
+          <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>DN64, Sat Vlăduceni, Păușești-Măglași, Vâlcea</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+        <!-- ==================== 2. HEADER PRINCIPAL ==================== -->
+  <header class="header-main">
+    <div class="container-custom py-3.5 sm:py-4 xl:py-4.5 flex items-center justify-between gap-4 xl:gap-6">
+      
+      <!-- Logo modern cu emblemă rafinată -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 xl:gap-3.5 group select-none shrink-0">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 xl:w-13 xl:h-13 rounded-2xl bg-gradient-to-br from-brand-teal to-brand-tealDark flex items-center justify-center text-white shadow-md ring-2 ring-brand-teal/20 group-hover:scale-105 transition shrink-0">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 xl:w-7.5 xl:h-7.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <div class="shrink-0">
+          <div class="text-[10px] xl:text-[11px] font-extrabold uppercase tracking-wider text-brand-teal leading-none mb-1">Spital de Boli Cronice</div>
+          <div class="text-lg sm:text-xl xl:text-2xl font-black text-slate-900 leading-tight tracking-tight whitespace-nowrap">Medical Expert House</div>
+          <div class="text-[11px] xl:text-xs text-slate-500 font-medium whitespace-nowrap">Păușești-Măglași, Jud. Vâlcea</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden xl:flex items-center gap-1 xl:gap-1.5 2xl:gap-2 shrink-0">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="servicii.html" class="nav-link active">Servicii</a>
+        <a href="info-pacienti.html" class="nav-link">Info pacienți</a>
+        <a href="galerie.html" class="nav-link">Galerie</a>
+        <a href="autorizatii.html" class="nav-link">Autorizații</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="hidden xl:flex items-center shrink-0">
+        <a href="tel:+40774503392" class="btn-primary text-xs xl:text-sm py-2 px-3.5 xl:py-2.5 xl:px-4 shadow shrink-0">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span class="font-bold">0774 503 392</span>
+        </a>
+      </div>
+
+      <!-- Buton Meniu Mobile & Tablet -->
+      <div class="flex xl:hidden items-center shrink-0">
+        <button id="mobile-menu-btn" class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition focus:outline-none border border-slate-200/80 shadow-xs active:scale-95" aria-label="Deschide meniu">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Sidebar -->
+  <div id="drawer-overlay" class="fixed inset-0 bg-slate-900/60 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-drawer" class="mobile-drawer fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl flex flex-col p-5">
+    
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal to-brand-tealDark text-white flex items-center justify-center font-bold text-xs shadow-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-extrabold uppercase text-brand-teal leading-none mb-1">Spital de Boli Cronice</div>
+          <div class="font-extrabold text-slate-900 text-base">Medical Expert House</div>
+        </div>
+      </div>
+      <button id="close-drawer-btn" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition" aria-label="Închide meniu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Card Apel Rapid în Meniu -->
+    <div class="mt-3.5 p-3.5 rounded-xl bg-gradient-to-r from-brand-orangeLight to-amber-50 border border-brand-orange/30 flex items-center justify-between shadow-xs">
+      <div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-brand-orange">Urgențe & Internări 24/7</div>
+        <div class="text-sm font-extrabold text-slate-900">0774 503 392</div>
+      </div>
+      <a href="tel:+40774503392" class="w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center shadow-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      </a>
+    </div>
+
+    <div class="flex flex-col gap-1 py-3 flex-1 overflow-y-auto">
+      <a href="index.html" class="nav-link text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span>Acasă</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="despre-noi.html" class="nav-link text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span>Despre noi</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="servicii.html" class="nav-link active text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span class="font-semibold">Servicii medicale</span>
+        <svg class="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="info-pacienti.html" class="nav-link text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span>Info pacienți & Ghid</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="galerie.html" class="nav-link text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span>Galerie foto</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="autorizatii.html" class="nav-link text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span>Autorizații DSP & ISU</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="contact.html" class="nav-link text-sm py-2.5 px-3 rounded-xl flex items-center justify-between">
+        <span>Locație & Contact</span>
+        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="pt-3 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+      <div class="flex items-center gap-1.5 text-slate-700 font-medium">
+        <svg class="w-3.5 h-3.5 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span>Sat Vlăduceni, DN64, Păușești-Măglași</span>
+      </div>
+      <div>E-mail: MedicalExpertHouse@yahoo.com</div>
+    </div>
+  </div>
+
+  <!-- TITLU PAGINĂ -->
+  <div class="bg-gradient-to-r from-brand-tealDark to-brand-teal text-white py-8 sm:py-12">
+    <div class="container-custom">
+      <div class="text-xs text-slate-300 mb-2">
+        <a href="index.html" class="hover:underline">Acasă</a> / <span>Servicii medicale</span>
+      </div>
+      <h1 class="text-2xl sm:text-4xl font-extrabold">Servicii Medicale & Afecțiuni Tratate</h1>
+      <p class="text-slate-200 mt-1.5 sm:mt-2 max-w-2xl text-xs sm:text-base">
+        Oferim asistență specializată continuă, tratamente individualizate și monitorizare atentă pentru pacienții cu patologii cronice.
+      </p>
+    </div>
+  </div>
+
+  <!-- SERVICII DETALIATE -->
+  <section class="py-8 sm:py-16 bg-white">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 mb-8 sm:mb-16">
+        
+        <!-- CARD 1 -->
+        <div class="card-feature p-4 sm:p-6 flex gap-3.5 sm:gap-5 items-start reveal reveal-delay-1">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-1 sm:mb-2">Boli Cardiovasculare Cronice</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-2 sm:mb-3 leading-relaxed">
+              Diagnostic, stabilizare și monitorizare zilnică a tensiunii arteriale și ritmului cardiac.
+            </p>
+            <ul class="text-[11px] sm:text-xs text-slate-600 space-y-1 sm:space-y-1.5 list-disc list-inside">
+              <li>Hipertensiune arterială esențială și secundară</li>
+              <li>Cardiopatie ischemică cronică și sechele post-infarct</li>
+              <li>Insuficiență cardiacă cronică stadii compensate</li>
+              <li>Arteriopatii obliterante ale membrelor inferioare</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-feature p-4 sm:p-6 flex gap-3.5 sm:gap-5 items-start reveal reveal-delay-2">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-1 sm:mb-2">Diabet Zaharat & Boli de Nutriție</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-2 sm:mb-3 leading-relaxed">
+              Controlul glicemic strict, prevenția complicațiilor acute și alimentație clinică personalizată.
+            </p>
+            <ul class="text-[11px] sm:text-xs text-slate-600 space-y-1 sm:space-y-1.5 list-disc list-inside">
+              <li>Diabet zaharat tip 2 cu tratament oral sau insulinodependent</li>
+              <li>Profilaxie și îngrijire a piciorului diabetic</li>
+              <li>Alimentație dietetică prin catering autorizat (regim diabetic, hiposodat)</li>
+              <li>Monitorizarea funcției renale la diabetici</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-feature p-4 sm:p-6 flex gap-3.5 sm:gap-5 items-start reveal reveal-delay-1">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-1 sm:mb-2">Boli Reumatice & Osteoarticulare</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-2 sm:mb-3 leading-relaxed">
+              Reducerea durerii, combaterea rigidității și îmbunătățirea mobilității articulare.
+            </p>
+            <ul class="text-[11px] sm:text-xs text-slate-600 space-y-1 sm:space-y-1.5 list-disc list-inside">
+              <li>Artroze (gonartroză, coxartroză, spondilartroză)</li>
+              <li>Poliartrită reumatoidă stadii cronice</li>
+              <li>Osteoporoză cu tasări vertebrale sau risc de fracturi</li>
+              <li>Exerciții fizice ușoare asistate de personal calificat</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-feature p-4 sm:p-6 flex gap-3.5 sm:gap-5 items-start reveal reveal-delay-2">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-1 sm:mb-2">Recuperare Neurologică & Post-AVC</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-2 sm:mb-3 leading-relaxed">
+              Sprijin pentru recăpătarea autonomiei personale și reintegrare.
+            </p>
+            <ul class="text-[11px] sm:text-xs text-slate-600 space-y-1 sm:space-y-1.5 list-disc list-inside">
+              <li>Sechele post accident vascular cerebral (pareze, hemiplegii)</li>
+              <li>Boli neurodegenerative (Parkinson stadii avansate)</li>
+              <li>Sprijin la îmbrăcare, hrănire și igienă personală</li>
+              <li>Prevenirea atrofiei musculare și a anchilozelor</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CE INCLUDE SPITALIZAREA -->
+      <div class="bg-gradient-to-br from-brand-tealLight to-slate-100 rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-brand-teal/20 reveal">
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 text-center">Ce include pachetul de spitalizare la Medical Expert House?</h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 text-sm">
+          <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-brand-orange font-bold text-sm sm:text-base mb-1">Cazare Confortabilă</div>
+            <p class="text-[11px] sm:text-xs text-slate-600">Saloane luminoase cu paturi medicale, noptiere, aerisire naturală și acces facil la grupuri sanitare.</p>
+          </div>
+          <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-brand-orange font-bold text-sm sm:text-base mb-1">Alimentație Dietetică (Catering)</div>
+            <p class="text-[11px] sm:text-xs text-slate-600">3 mese principale calde zilnice și gustări asigurate prin serviciu autorizat de catering dietetic specializat, adaptate la regimul fiecărui pacient.</p>
+          </div>
+          <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-brand-orange font-bold text-sm sm:text-base mb-1">Supraveghere Medicală 24/7</div>
+            <p class="text-[11px] sm:text-xs text-slate-600">Asistente medicale și infirmiere prezente permanent pentru administrare tratamente și urgențe.</p>
+          </div>
+          <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-brand-orange font-bold text-sm sm:text-base mb-1">Igienă & Schimb Lenjerie</div>
+            <p class="text-[11px] sm:text-xs text-slate-600">Igienizare corporală zilnică, schimbare periodică a lenjeriilor și dezinfectare conform normelor MS.</p>
+          </div>
+          <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-brand-orange font-bold text-sm sm:text-base mb-1">Tratamente Asistate</div>
+            <p class="text-[11px] sm:text-xs text-slate-600">Injecții, perfuzii, pansamente escare, măsurători TA, glicemie, puls și saturație O2 zilnice.</p>
+          </div>
+          <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-brand-orange font-bold text-sm sm:text-base mb-1">Consiliere Familie</div>
+            <p class="text-[11px] sm:text-xs text-slate-600">Informare transparentă și permanentă a aparținătorilor privind evoluția stării de sănătate.</p>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-8 text-center">
+          <a href="tel:+40774503392" class="btn-primary text-xs sm:text-base py-2.5 sm:py-3 px-5 sm:px-8 inline-flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>Sună pentru detalii internare: 0774 503 392</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800 text-sm">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: Despre Spital -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-lg bg-brand-teal flex items-center justify-center text-white">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <div class="font-bold text-white text-base">Medical Expert House</div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Spital de Boli Cronice autorizat în județul Vâlcea. Asistență medicală continuă 24/7, protocoale clinice stricte și cazare igienizată la standarde europene.
+          </p>
+          <div class="text-xs text-slate-400">
+            <strong>CUI:</strong> 39042036 • Înreg. Reg. Comerțului Vâlcea
+          </div>
+        </div>
+
+        <!-- Col 2: Legislație Sănătate -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider text-brand-teal">Legislație Sănătate</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="https://legislatie.just.ro/Public/DetaliiDocument/41483" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Legea nr. 46/2003 (Drepturile pacientului)</a></li>
+            <li><a href="https://legislatie.just.ro/Public/DetaliiDocument/71139" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Legea nr. 95/2006 (Reforma în sănătate)</a></li>
+            <li><a href="https://anpc.ro/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> A.N.P.C. (Protecția Consumatorilor)</a></li>
+            <li><a href="https://legislatie.just.ro/Public/DetaliiDocument/141231" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Legea nr. 487/2002 (Sănătatea mintală)</a></li>
+            <li><a href="https://legislatie.just.ro/Public/DetaliiDocument/256414" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Legea nr. 179/2022</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legături Utile -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider text-brand-teal">Legături Utile</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="http://www.ms.ro/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Ministerul Sănătății</a></li>
+            <li><a href="http://www.aspjvalcea.ro/site/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Direcția de Sănătate Publică (DSP) Vâlcea</a></li>
+            <li><a href="http://www.casan.ro/casvl/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Casa de Asigurări de Sănătate (CAS) Vâlcea</a></li>
+            <li><a href="http://www.cnas.ro/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> C.N.A.S. România</a></li>
+            <li><a href="autorizatii.html" class="hover:text-amber-400 transition flex items-center gap-1"><span>•</span> Autorizații Mediu, ISU și DSP</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Direct -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider text-brand-teal">Contact Direct</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand-orange shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Sat Vlăduceni, Com. Păușești-Măglași, Str. Principală nr. 9, Jud. Vâlcea</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:+40774503392" class="text-white font-bold hover:text-amber-400">0774 503 392</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>MedicalExpertHouse@yahoo.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 Medical Expert House S.R.L. Toate drepturile rezervate.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="info-pacienti.html" class="hover:text-slate-300">Confidențialitate & GDPR</a>
+          <span>•</span>
+          <a href="autorizatii.html" class="hover:text-slate-300">Transparență & Autorizații</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
